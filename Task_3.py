@@ -18,7 +18,7 @@ def check_gen(tutors: list, klasses: list):
 
 generator = check_gen(tutors, klasses)
 # добавьте здесь доказательство, что создали именно генератор
-# потому что функция, где юзается иелд(yield) автоматически становится генератором
+# потому что функция, где юзается иелд(yield) автоматически становится генератором(вроде бы да)
 for _ in range(len(tutors)):
     print(next(generator))
 # next(generator)  # если раскомментировать, то должно падать в traceback по StopIteration
